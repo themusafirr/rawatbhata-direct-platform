@@ -7,7 +7,15 @@
 
 > Hyperlocal rapid delivery & essential community commerce marketing platform for Rawatbhata. Includes production HTML5 responsive promotional poster canvases, localized brand marketing assets, and social acquisition campaign designs.
 
+
+<div align="center">
+  <br/>
+  <img src="./assets/preview.png" width="100%" alt="Live UI Preview" style="border-radius: 14px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);" />
+  <br/>
+</div>
+
 ---
+
 
 ## 🌟 Capabilities & Offerings
 
