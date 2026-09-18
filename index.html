@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rawatbhata Direct — On-Demand Local Delivery & Services</title>
+  <link rel="icon" href="images/rwt_real1.jpg">
+  <style>
+    :root {
+      --primary: #f59e0b;
+      --primary-dark: #d97706;
+      --dark: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --text: #f8fafc;
+      --text-dim: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body {
+      background: #0b0f19;
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: radial-gradient(circle at center, rgba(245, 158, 11, 0.15) 0%, rgba(15, 23, 42, 0.95) 75%), url('images/rwt_real1.jpg') center/cover no-repeat;
+    }
+    .badge {
+      background: var(--primary);
+      color: var(--dark);
+      padding: 8px 24px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.5);
+    }
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    }
+    h1 span { color: var(--primary); }
+    .tagline {
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      color: #e2e8f0;
+      max-width: 680px;
+      margin-bottom: 36px;
+      line-height: 1.5;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      padding: 16px 36px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--dark);
+      box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 48px;
+    }
+    .section-title span { color: var(--primary); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 32px 24px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary);
+    }
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: var(--text-dim);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="badge">🚀 Ab Rawatbhata Me Sab Kuch Doorstep Par</div>
+    <h1>RAWATBHATA <span>DIRECT</span></h1>
+    <p class="tagline">"Baithe raho, kaam ho jayega!" — Fresh Food, Kirana Grocery, Emergency Medicine, Fuel aur Transport sab ek click par.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/919649228281?text=Namaste%20Rawatbhata%20Direct,%20I%20want%20to%20place%20an%20order" class="btn btn-primary" target="_blank">
+        💬 WhatsApp Par Order Karein
+      </a>
+      <a href="tel:+919649228281" class="btn btn-secondary">
+        📞 Direct Call: 9649228281
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Hamari <span>Services</span></h2>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">🍔</div>
+        <h3>Hot Food Delivery</h3>
+        <p>Rawatbhata ke top dhabon aur restaurants se garam khana aapke room ya ghar tak 30 minute me.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛒</div>
+        <h3>Kirana & Grocery</h3>
+        <p>Atta, daal, doodh, sabziyan, cold drinks aur daily essentials ki instant home delivery.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💊</div>
+        <h3>24/7 Medical Care</h3>
+        <p>Raat me dawayi chahiye? Kisi bhi medical store se prescription dawa turant deliver.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⛽</div>
+        <h3>Emergency Petrol & Fuel</h3>
+        <p>Raaste me petrol khatam ho gaya? Chinta mat karo, spot delivery on demand available hai.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3>Plumber & Electrician</h3>
+        <p>Ghar ka bijli ya nal repair? Verified local technicians aapke doorstep par call par haazir.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🚗</div>
+        <h3>Local Transport & Pickup</h3>
+        <p>Station drop, parcel pickup ya town me kahin bhi jaana ho, instant auto aur cab assist.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 80px;">City <span>Spotlights</span></h2>
+    <div class="gallery">
+      <img src="images/rwt_real1.jpg" alt="Rana Pratap Sagar Dam">
+      <img src="images/rwt_real2.jpg" alt="Rawatbhata Scenic View">
+      <img src="images/rwt_real3.jpg" alt="Rawatbhata Lake">
+      <img src="images/rwt_waterfall.jpg" alt="Rawatbhata Waterfall">
+    </div>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ for Rawatbhata by <a href="https://github.com/themusafirr">The Musafir</a>. Powered by Hyperlocal Commerce.</p>
+  </footer>
+
+</body>
+</html>
