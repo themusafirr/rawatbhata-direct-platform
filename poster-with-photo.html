@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rawatbhata Direct - With Real Photo</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #f59e0b; font-family: 'Georgia', serif; }
+.slide {
+  width: 1080px; height: 1080px;
+  background: #f59e0b;
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  color: white; padding: 60px;
+}
+/* Real photo - full background */
+.bg-photo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+/* Dark overlay on photo */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.5) 50%, rgba(245,158,11,0.4) 100%);
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-side {
+  flex: 1;
+  padding-right: 30px;
+}
+.launching {
+  background: #f59e0b;
+  color: #0f172a;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+.title {
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  font-family: Georgia, serif;
+}
+.subtitle {
+  font-size: 42px;
+  color: #f59e0b;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+.tagline {
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-style: italic;
+  opacity: 0.95;
+}
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.btn {
+  background: #f59e0b;
+  color: #0f172a;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.phone-mockup {
+  width: 380px;
+  height: 580px;
+  background: #0f172a;
+  border-radius: 40px;
+  border: 8px solid #1e293b;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+.phone-top {
+  background: #1e293b;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.phone-icon {
+  width: 45px; height: 45px;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.phone-info .t1 {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.phone-info .t2 {
+  color: #94a3b8;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+}
+.search {
+  background: #334155;
+  margin: 15px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+}
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 0 15px;
+}
+.svc {
+  background: #334155;
+  border-radius: 12px;
+  padding: 18px 10px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.svc .icon { font-size: 30px; margin-bottom: 6px; }
+.svc .name { font-size: 12px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img src="../images/rwt_real1.jpg" class="bg-photo" alt="Rajasthan">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="text-side">
+      <div class="launching">LAUNCHING</div>
+      <h1 class="title">RAWATBHATA</h1>
+      <h2 class="subtitle">HYPERLOCAL</h2>
+      <p class="tagline">Your neighborhood, your services</p>
+      <div class="btn-group">
+        <div class="btn">ORDER NOW</div>
+        <div class="btn btn-outline">LEARN MORE</div>
+      </div>
+    </div>
+    <div class="phone-mockup">
+      <div class="phone-top">
+        <div class="phone-icon">R</div>
+        <div class="phone-info">
+          <div class="t1">Rawatbhata</div>
+          <div class="t2">Hyperlocal</div>
+        </div>
+      </div>
+      <div class="search">🔍 Search groceries, food...</div>
+      <div class="services">
+        <div class="svc">
+          <div class="icon">🥬</div>
+          <div class="name">GROCERY</div>
+        </div>
+        <div class="svc">
+          <div class="icon">🍕</div>
+          <div class="name">FOOD</div>
+        </div>
+        <div class="svc">
+          <div class="icon">💊</div>
+          <div class="name">MEDICINE</div>
+        </div>
+        <div class="svc">
+          <div class="icon">📦</div>
+          <div class="name">PARCEL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
